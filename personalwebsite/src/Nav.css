@@ -1,0 +1,40 @@
+
+.navigation {
+    display:  flex;
+    justify-content: space-between;
+    background-color: #943c2436;
+}
+
+.brand-name {
+    font-size:2rem;
+    text-decoration: none;
+    color:black;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left:5%;
+    padding:1%;
+}
+
+.navigation-menu {
+    margin-right:10%;
+}
+.navigation-menu ul{
+    display: flex;
+    list-style: none;
+    margin:0;
+    height:100%;
+}
+
+.navigation-menu a {
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+
+.navigation-menu li {
+    padding-top:10%;
+    margin-right:2rem;
+}
+.navigation-menu a:hover {
+    color: aliceblue;
+}
