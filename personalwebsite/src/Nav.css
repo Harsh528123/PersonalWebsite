@@ -2,6 +2,7 @@
 .navigation {
     display:  flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #943c2436;
 }
 
@@ -9,20 +10,16 @@
     font-size:2rem;
     text-decoration: none;
     color:black;
-    margin-top:auto;
-    margin-bottom: auto;
     margin-left:5%;
     padding:1%;
 }
 
 .navigation-menu {
-    margin-right:10%;
+    margin-right:5%;
 }
 .navigation-menu ul{
     display: flex;
     list-style: none;
-    margin:0;
-    height:100%;
 }
 
 .navigation-menu a {
@@ -32,9 +29,54 @@
 }
 
 .navigation-menu li {
-    padding-top:10%;
     margin-right:2rem;
 }
 .navigation-menu a:hover {
     color: aliceblue;
+}
+
+/* we do not want it in large screen */
+
+button {
+    display:none;
+    background-color: transparent;
+}
+
+#hidden {
+    display:flex;
+}
+@media screen and (max-width: 650px) {
+     button{
+        display:flex;
+        margin-right:5%;
+
+    }
+    .navigation-menu{
+        display:none;
+    }
+
+    #hidden {
+        position:fixed;
+        left:0px;
+        height:100%;
+        width: 100%;
+        top:50px;
+        background-color: #c9a49a;
+    }
+    #hidden a {
+        margin:5%;
+    }
+    #hidden ul {
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin:0 auto;
+        margin-top:auto;
+        margin-bottom: auto;
+    }
+    #hidden li {
+        margin-top:25%;
+    }
+
 }

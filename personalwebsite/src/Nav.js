@@ -1,13 +1,19 @@
-import React from 'react'
+import {React,useState} from 'react'
 import './Nav.css'
+import {FaBars} from 'react-icons/fa'
+
 const Nav = () => {
+  const [showLinks, setShowLinks]= useState(false)
+
   return (
+
     <header>
          <nav className="navigation">
               <a href="/" className="brand-name">
                 Harsh Kothari
               </a>  
-              <div className="navigation-menu">
+              <button onClick={ ()=> setShowLinks(!showLinks)}> <FaBars/> </button>
+              <div className="navigation-menu" id={ showLinks ? "hidden" : ""}>
                 <ul>
                   <li>
                   <a href="/about">Home</a>

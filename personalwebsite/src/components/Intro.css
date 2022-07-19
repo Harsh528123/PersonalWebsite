@@ -1,0 +1,47 @@
+.introduction{
+    display:flex;
+    background-color: beige;
+    align-items: center;
+    justify-content: space-around;
+}
+.Profile {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width:20%;
+    padding:2%;
+}
+
+.BriefWelcome {
+    font-size: 2em;
+    padding:2%;
+    padding-right:1%;
+    border-right: 2px solid black;
+    flex-grow: 3;
+}
+.AboutMe {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    margin-right:5%;
+}
+.AboutMe span {
+    text-align: center;
+}
+.AboutMe a {
+    margin:5%;
+    text-decoration: none;
+}
+.AboutMe h1 {
+    font-size: 2em; 
+    text-align: center;
+}
+
+
+
+
+
+ 
