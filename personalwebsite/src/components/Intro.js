@@ -8,11 +8,11 @@ const smallIntro = () => {
 
         <img src={Profile} alt="Profile" className='Profile'/>
 
-        <article className='BriefWelcome'> 
+        <article className='BriefWelcome' id="BriefWelcomeMobile"> 
           <h1> My name is Harsh. </h1>
           <h1>  Welcome to my Page!</h1>
         </article>
-        <article className='AboutMe'>
+        <article className='AboutMe' id="AboutMeMobile">
           <h1> Brief Introduction </h1>
           <p> I am studying Software Engineering at the University of Alberta and am in the graduating class of 2025.
               I am interested in exploring the various niches of programming such as front-end, back-end, data science, full-stack 

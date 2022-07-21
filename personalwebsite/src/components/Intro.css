@@ -3,6 +3,7 @@
     background-color: beige;
     align-items: center;
     justify-content: space-around;
+    scroll-snap-type: y mandatory;
 }
 .Profile {
     border-radius: 50%;
@@ -19,7 +20,7 @@
     padding:2%;
     padding-right:1%;
     border-right: 2px solid black;
-    flex-grow: 3;
+    flex-grow: 1;
 }
 .AboutMe {
     display:flex;
@@ -38,6 +39,32 @@
 .AboutMe h1 {
     font-size: 2em; 
     text-align: center;
+    margin-bottom:0px;
+}
+
+@media screen and (max-width: 650px) {
+
+    .introduction{
+        display: flex;
+        flex-direction: column;
+    }
+    .BriefWelcome{
+        border:none;
+        font-size: 6vw;
+    }
+    .BriefWelcome h1{
+        margin:0;
+    }
+    .Profile {
+        width:50%;
+    }
+    .AboutMe h1{
+        font-size: 5vw;
+    }
+    .AboutMe p {
+        font-size:4vw;
+    }
+
 }
 
 

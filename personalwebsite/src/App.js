@@ -1,13 +1,15 @@
 import './App.css';
 import Nav from "./Nav";
 import Smallintro from "./components/Intro"
+import Timeline from './components/Timeline';
 
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Smallintro />
+        <Nav />
+        <Smallintro />
+      <Timeline />
     </div>
   );
 }
