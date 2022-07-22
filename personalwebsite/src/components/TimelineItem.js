@@ -1,6 +1,8 @@
-import React from 'react'
+import { useState, React } from "react"
+
 
 const TimelineItem = ({ data}) => {
+  const [clicked, setclicked] = useState(false)
   return (
     <div className="timeline-item">
     {/* first wrapper*/}
@@ -10,17 +12,8 @@ const TimelineItem = ({ data}) => {
               {data.category.tag}
           </span>
           <time>{data.date}</time>
-          <p>{data.text}</p>
-          {data.link && (
-              <a
-                  href={data.link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-              >
-                  {data.link.text}
-              </a>
-          )}
-          <span className="circle" />
+          {!clicked?  <button onClick={()=> setclicked(!clicked)}> Click here for more information! </button> : null}
+          {clicked? <p><button onClick={()=> setclicked(!clicked)}> x </button>{data.text}</p> : null}
       </div>
     </div>
   )
