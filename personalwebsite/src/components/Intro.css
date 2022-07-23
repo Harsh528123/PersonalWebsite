@@ -2,7 +2,7 @@
     display:flex;
     background-color: beige;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-evenly;
     scroll-snap-type: y mandatory;
 }
 
@@ -12,8 +12,8 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    width:50%;
     padding:2%;
+    width:50%;
 }
 .TypingEffect{
     font-size:30px;
@@ -25,13 +25,13 @@
     justify-content: space-evenly;
     padding-left: 5%;
     padding-right:5%;
-    border-left: 2px solid black;
+
 }
 .AboutMe span {
     text-align: center;
 }
 .AboutMe a {
-    padding:3%;
+    padding:2%;
     text-decoration: none;
 }
 .AboutMe h1 {

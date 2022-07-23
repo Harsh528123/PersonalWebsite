@@ -179,11 +179,6 @@
     left: -40px;
 }
 
-@media only screen and (max-width: 1023px) {
-    .timeline-item-content {
-        width: 100%;
-    }
-}
 
 @media only screen and (max-width: 767px) {
     .timeline-item-content {

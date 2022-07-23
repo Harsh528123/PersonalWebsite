@@ -1,5 +1,6 @@
 const timelineData = [
     {
+        id:1,
         text: 'This was my very first volunteer position at a University of Alberta club! The project I was assigned to \n\
         was an object-detection Python project involving ML libraries such as TensorFlow. As assistant mentor, my role was to \n\
         understand the procedural aspect of the code and how the code flows and summarize it in a document that would then be \n\
@@ -12,25 +13,27 @@ const timelineData = [
     },
     },
     // OBJECT 1
-    {
+    {   
+        id:2,
         text: 'As a project developer, I was put in a team of 3 people and we were in charge of making a robot that can follow any black taped line drawn on the floor. \n\
         We build the robot using two motors, two wheels, infrared sensors, and an Arduino Uno microcontroller. \n\
         The logic the robot followed was developed by me in Arduino/C++. Later we provided a summary on how to make the project and I was responsible for explaining the code logic.',
         date: 'Sept - Dec 2021',
         category: {
       tag: 'Project Developer @ Future Creators',
-      color: '#e17b77'
+      color: '#943c245e'
     },
     },
     // OBJECT 2 
-    {
+    {   
+        id:3,
         text: ' I was responsible for developing an adaptive question bank management system that would be a part of an adaptive learning system. \n\
         I developed the user interface for the question bank system using React.js and implemented server-side code using Node.js. Routing and REST APIs \n\
         were implmented using Express.js. I also designed a normalized (3NF) PostgreSQL database and created UML and ER diagrams to visualize the software and database design of the system.',
         date: 'May-August 2022',
         category: {
       tag: 'NSERC Research Assistant @ Athabasca University',
-      color: '#1DA1F2'
+      color: '#943c245e'
     },
     /* The main project the whole team was working on was an adaptive learning system. \n\
     The end goal of the system would be to detect learning weaknessess and gaps quickly through assessments. \n\
