@@ -37,6 +37,7 @@
     display:inline;
     border:none;
     margin-top:2%;
+    opacity: 80%;
     background-color: rgba(140, 241, 110, 0.692);
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -46,7 +47,7 @@
     cursor: pointer;
 }
 .timeline-item button:hover{
-    opacity:70%;
+    opacity:100%;
 }
 
 .timeline-item:nth-child(odd) {

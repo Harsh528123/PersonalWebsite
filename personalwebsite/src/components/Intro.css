@@ -39,8 +39,12 @@
     text-align: center;
     margin-bottom:0px;
 }
+.SocialMedia{
+    opacity: 85%;
+    color: aquamarine;
+}
 .SocialMedia:hover{
-    opacity: 65%;
+    opacity: 100%;
 }
 
 

@@ -28,7 +28,7 @@ const Skills = () => {
             </div>
         </section>
         <section className='SpecificSkills'>
-            <h2> Skills Learned at a Workplace</h2>
+            <h2> Skills Learned during a Workplace</h2>
             <div className='all8'>
                 <div className='setof4'>
                     <button> JavaScript </button>
