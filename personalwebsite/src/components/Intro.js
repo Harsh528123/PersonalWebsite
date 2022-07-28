@@ -2,11 +2,12 @@ import {React} from 'react'
 import Profile from './Intro.jpg'
 import {AiFillGithub,AiOutlineLinkedin} from 'react-icons/ai'
 import {MdOutlineEmail} from 'react-icons/md'
-import {ScrollAnimation} from 'react-animate-on-scroll'
+import {motion} from 'framer-motion'
 import './Intro.css'
 
 const SmallIntro = ({theme}) => {
   return (
+    
           <section className='introduction'>
               <img src={Profile} alt="Profile" className='Profile'/>
               <article className='AboutMe' id="AboutMeMobile">

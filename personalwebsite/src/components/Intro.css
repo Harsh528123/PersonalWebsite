@@ -4,8 +4,18 @@
     align-items: center;
     justify-content:space-evenly;
     scroll-snap-type: y mandatory;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
 }
-
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 .Profile {
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -56,7 +66,9 @@
         display: flex;
         flex-direction: column;
         justify-content:space-evenly;
-    }
+        animation: none;
+        -webkit-animation: none;
+}
     .BriefWelcome{
         border:none;
         font-size: 6vw;

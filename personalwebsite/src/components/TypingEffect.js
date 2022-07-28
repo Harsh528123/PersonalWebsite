@@ -8,9 +8,10 @@ const TypingEffect = () => {
         <ReactTypingEffect
         text={["My name is Harsh Kothari", "Welcome to my Page!"]}
         cursor=" "
-        eraseDelay={1000}
+        eraseDelay={2000}
         eraseSpeed={200}
         typingDelay={1000}
+        speed={200}
       />
     </header>
   )

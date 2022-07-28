@@ -1,5 +1,4 @@
 import { useState, React } from "react"
-import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const TimelineItem = ({data}) => {
   const [clicked, setclicked] = useState(false)
