@@ -1,8 +1,8 @@
 .App{
     display:flex;
     flex-direction: column;
-    scroll-snap-type: y mandatory;
+    background-color: var(--background);
+    color:var(--text-primary)
 }
-
 
 

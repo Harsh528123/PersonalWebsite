@@ -1,6 +1,6 @@
 .introduction{
     display:flex;
-    background-color: beige;
+    background-color: var(--intro);
     align-items: center;
     justify-content:space-evenly;
     scroll-snap-type: y mandatory;
@@ -40,8 +40,8 @@
     margin-bottom:0px;
 }
 .SocialMedia{
+    align-self: center;
     opacity: 85%;
-    color: aquamarine;
 }
 .SocialMedia:hover{
     opacity: 100%;

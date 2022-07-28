@@ -15,7 +15,7 @@
 
 /* this is the line */ 
 .timeline-container::after {
-    background-color: #e17b77;
+    background-color: var(--timeline);
     content: '';
     position: absolute;
     left: calc(50% - 2px);
@@ -36,9 +36,8 @@
 .timeline-item button{
     display:inline;
     border:none;
-    margin-top:2%;
     opacity: 80%;
-    background-color: rgba(140, 241, 110, 0.692);
+    background-color: var(--skillbutton);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -60,27 +59,30 @@
 
 
 .timeline-item-content {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px var(--text-primary);
     /* this is to give the box look */
     border-radius: 5px;
-    background-color: #fff;
+    background-color: var(--text-secondary);
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items:center;
     padding: 15px;
     position: relative;
     width: 70%;
     max-width: 100%;
-    text-align: left;
+    margin-left:1.7%;
+    margin-right:1.7%;
 }
 /* this is the actual white box */
+.timeline-item-content time{
+    margin-bottom: 2%;
+}
 
 
-/*
 .timeline-item-content::after {
     content: ' ';
-    background-color: #fff;
-    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--text-secondary);
     position: absolute;
     right: -7.5px;
     top: calc(50% - 7.5px);
@@ -88,13 +90,14 @@
     width: 15px;
     height: 15px;
 }
-*/
 /* this is the triangle for normal ones  */
 
+/*
 .timeline-item:nth-child(odd) .timeline-item-content {
     text-align: left;
     align-items: center;
 }
+*/
 /* just the data.text and content is mainly left centered is altered */
 
 .timeline-item:nth-child(odd) .timeline-item-content::after {
@@ -104,7 +107,7 @@
 /* each odd item triangle  will be left centered */
 
 .timeline-item-content .tag {
-    color: #fff;
+    color: var(--text-primary);
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -117,10 +120,10 @@
 /* each odd tag will be on the right*/ 
 
 .timeline-item-content time {
-    color: #777;
+    color: var(--text-primary);
     font-size: 12px;
     font-weight: bold;
-    margin-top:5%;
+    margin-top:2%;
 }
 
 .timeline-item-content p {
@@ -128,7 +131,7 @@
     line-height: 24px;
     padding:2%;
     max-width: 100%;
-  background-color: #f5e9c9;
+  background-color: var(--background);
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -140,7 +143,7 @@
     margin-left:10%;
     margin-top:0px;
     margin-right:0px;
-    background-color: #e17b77;
+    background-color: var(--timeline);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -150,18 +153,13 @@
 .timeline-item-content p button:hover {
     cursor: pointer;
 }
-
-.timeline-item-content a {
-	color: #333;
-	text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+.timeline-item-content button {
+    color: var(--text-primary);
 }
 
-.timeline-item-content a::after {
-    content: ' ►';
-    font-size: 12px;
-}
+
+
+
 /*
 .timeline-item-content .circle {
     background-color: #fff;
@@ -175,10 +173,12 @@
     z-index: 100;
 }
 */
+/*
 .timeline-item:nth-child(odd) .timeline-item-content .circle {
     right: auto;
     left: -40px;
 }
+*/
 
 
 @media only screen and (max-width: 767px) {
@@ -188,8 +188,10 @@
     .timeline-item-content,
     .timeline-item:nth-child(odd) .timeline-item-content {
         padding: 15px 10px;
-        text-align: center;
+        text-align: left;
         align-items: center;
+        margin-left: 0;
+        margin-right:0;
     }
 
     .timeline-item-content .tag {
@@ -199,7 +201,7 @@
     }
 
     .timeline-item-content time {
-        margin-top: 25px;
+        margin-top: 2%;
     }
 
     .timeline-item-content a {

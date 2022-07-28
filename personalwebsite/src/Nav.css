@@ -3,15 +3,19 @@
     display:  flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #943c245e;
+    background-color: var(--navigation);
 }
 
+.ToggleButton{
+    display:inline-block;
+}
 .brand-name {
     font-size:2rem;
     text-decoration: none;
-    color:black;
+    color:var(--text-primary);
     margin-left:5%;
     padding:1%;
+    flex-grow: 1;
 }
 
 .navigation-menu {
@@ -25,14 +29,14 @@
 .navigation-menu a {
     text-align: center;
     text-decoration: none;
-    color:black;
+    color:var(--text-primary);
 }
 
 .navigation-menu li {
     margin-right:2rem;
 }
 .navigation-menu a:hover {
-    color: aliceblue;
+    color: var(--text-secondary);
 }
 
 /* we do not want it in large screen */
@@ -61,7 +65,7 @@ button {
         height:100%;
         width: 100%;
         top:50px;
-        background-color: #c9a49a;
+        background-color: var(--hidden);
         height:100%;
     }
     #hidden a {

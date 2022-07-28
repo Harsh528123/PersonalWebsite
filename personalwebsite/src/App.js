@@ -4,16 +4,21 @@ import Smallintro from "./components/Intro";
 import Timeline from './components/Timeline';
 import TypingEffect from './components/TypingEffect';
 import Skills from './components/Skills'
+import {React, useState} from 'react'
+
 
 function App() {
+
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'light' );
   return (
-    <div className="App">
-        <Nav />
-        <TypingEffect/>
-        <Smallintro />
-        <Skills/>
-        <Timeline />
-    </div>
+        <div className="App" data-theme={theme} >
+        {/* <Nav handler={handleUpdate} /> */}    
+            <Nav theme={theme} setTheme={setTheme} />
+            <TypingEffect/>
+            <Smallintro theme={theme} />
+            <Skills/>
+            <Timeline />
+        </div>
   );
 }
 
