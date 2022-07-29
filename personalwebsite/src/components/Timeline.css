@@ -156,7 +156,22 @@
 .timeline-item-content button {
     color: var(--text-primary);
 }
-
+.timeline-item-content .language{
+    display:flex;
+    margin-bottom: 2%;
+}
+.timeline-item-content .language button{
+    margin-left: 2%;
+    margin-right:2%;
+    background-color: var(--skillbutton);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 1px 1px var(--text-primary);
+    opacity: 100%;
+}
 
 
 

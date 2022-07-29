@@ -2,7 +2,6 @@ import {React} from 'react'
 import Profile from './Intro.jpg'
 import {AiFillGithub,AiOutlineLinkedin} from 'react-icons/ai'
 import {MdOutlineEmail} from 'react-icons/md'
-import {motion} from 'framer-motion'
 import './Intro.css'
 
 const SmallIntro = ({theme}) => {
