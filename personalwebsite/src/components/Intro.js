@@ -1,5 +1,5 @@
 import {React} from 'react'
-import Profile from './Intro.jpg'
+import Profile from './images/Intro.jpg'
 import {AiFillGithub,AiOutlineLinkedin} from 'react-icons/ai'
 import {MdOutlineEmail} from 'react-icons/md'
 import './Intro.css'

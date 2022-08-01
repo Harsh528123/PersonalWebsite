@@ -171,6 +171,7 @@
     -o-border-radius: 4px;
     box-shadow: 1px 1px var(--text-primary);
     opacity: 100%;
+    font-size: smaller ;
 }
 
 
@@ -197,6 +198,9 @@
 
 
 @media only screen and (max-width: 767px) {
+    .timeline-item-content .language button{
+        display:none;
+    }
     .timeline-item-content {
         width: 100%;
     }

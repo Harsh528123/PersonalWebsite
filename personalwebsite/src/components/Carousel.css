@@ -1,0 +1,120 @@
+.container-slider {
+    width: 80%;
+    height:auto;
+    margin: 0 auto;
+    margin-bottom:3%;
+    margin-top:3%;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--intro);
+  }
+ 
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity ease-in-out 0.4s;
+    display:none;
+    -webkit-transition: opacity ease-in-out 0.4s;
+    -moz-transition: opacity ease-in-out 0.4s;
+    -ms-transition: opacity ease-in-out 0.4s;
+    -o-transition: opacity ease-in-out 0.4s;
+}
+  
+  .active-anim {
+    opacity: 100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+  }
+  .title {
+    text-align: center;
+    font-size: 18px;
+  }
+  .description{
+    width:60%;
+    height:60%;
+    margin:0 auto;
+    margin-bottom: 2%;
+    line-height: 2;
+    font-size: 14px;
+  }
+  .btn-slide {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid rgba(34, 34, 34, 0.287);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity:75%;
+  }
+  .btn-slide:hover{
+    opacity: 100%;
+  }
+ 
+  .content{
+    display:flex;
+    align-items: center;
+  }
+  .prev {
+    margin-left: 2%;
+  }
+  .next {
+    margin-right:2%;
+  }
+  
+  .btn-slide img {
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+    background-color: transparent;
+  }
+  .btn-slide .next:hover{
+    background-color: aqua;
+  }
+  .container-dots {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:2%;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    margin: 0 5px;
+    background: #ffffff;
+  }
+  .dot:hover{
+    cursor: pointer;
+  }
+  .dot.active {
+    background: rgb(32, 32, 32);
+  }
+
+  @media screen and (max-width:700px) {
+    .btn-slide{
+      width:40px;
+      height:40px;
+    }
+  }
+
+  @media screen and (max-width:700px) {
+    .btn-slide{
+      width:30px;
+      height:30px;
+    }
+    .btn-slide img{
+      width:20px;
+      height:20px;
+    }
+  }
+
+

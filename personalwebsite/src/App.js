@@ -5,7 +5,7 @@ import Timeline from './components/Timeline';
 import TypingEffect from './components/TypingEffect';
 import Skills from './components/Skills'
 import {React, useState} from 'react'
-
+import Carousel from './components/Carousel';
 
 function App() {
 
@@ -18,6 +18,7 @@ function App() {
             <Smallintro theme={theme} />
             <Skills/>
             <Timeline />
+            <Carousel/>
         </div>
   );
 }

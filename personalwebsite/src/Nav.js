@@ -1,22 +1,30 @@
-import {React,useState} from 'react'
+import {React,useState, useEffect} from 'react'
 import './Nav.css'
 import {FaBars} from 'react-icons/fa'
 import DarkModeToggle from "react-dark-mode-toggle"
 
 const Nav = ( {theme, setTheme} ) => {
       const [showLinks, setShowLinks]= useState(false);
-      const [isDarkMode, setIsDarkMode] = useState(()=> false);
+      const [isDarkMode, setIsDarkMode] = useState(false);
       const handleTheme = () => {
           if (theme==='light') {
               setTheme('dark');
               localStorage.setItem("theme",'dark')
-              setIsDarkMode(()=>true);
+              setIsDarkMode(true);
           } else {
               setTheme('light');
               localStorage.setItem("theme", 'light')
-              setIsDarkMode(()=>false);
+              setIsDarkMode(false);
               }
-  }
+
+        }
+  useEffect(()=> {
+    if (isDarkMode && theme==='light'){
+      setIsDarkMode(false);
+    } else if (theme==='dark' && !isDarkMode) {
+      setIsDarkMode(true);
+    }
+  },[] )
   return (
 
     <header>
