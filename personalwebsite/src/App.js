@@ -6,19 +6,21 @@ import TypingEffect from './components/TypingEffect';
 import Skills from './components/Skills'
 import {React, useState} from 'react'
 import Carousel from './components/Carousel';
+import Footer from './components/Footer';
 
 function App() {
 
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'light' );
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'dark' );
   return (
         <div className="App" data-theme={theme} >
         {/* <Nav handler={handleUpdate} /> */}    
             <Nav theme={theme} setTheme={setTheme} />
-            <TypingEffect/>
+            <TypingEffect />
             <Smallintro theme={theme} />
-            <Skills/>
+            <Skills />
             <Timeline />
-            <Carousel/>
+            <Carousel />
+            <Footer />
         </div>
   );
 }

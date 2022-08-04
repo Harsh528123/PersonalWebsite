@@ -1,3 +1,10 @@
+.Carousel{
+  background-color: var(--intro);
+}
+h1{
+  font-size: 2em;
+  text-align: center;
+}
 .container-slider {
     width: 80%;
     height:auto;
@@ -6,8 +13,9 @@
     margin-top:3%;
     display:flex;
     flex-direction: column;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: var(--intro);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.507);
+    background-color: var(--background);
+    padding:2%;
   }
  
 
@@ -56,16 +64,12 @@
   .btn-slide:hover{
     opacity: 100%;
   }
- 
+  .btn-slide .next{
+    margin-right: 2%;
+  }
   .content{
     display:flex;
     align-items: center;
-  }
-  .prev {
-    margin-left: 2%;
-  }
-  .next {
-    margin-right:2%;
   }
   
   .btn-slide img {
