@@ -35,13 +35,13 @@ const Nav = ( {theme, setTheme} ) => {
               <div className="navigation-menu" id={ showLinks ? "hidden" : ""}>
                 <ul>
                   <li>
-                  <a href="/about">Home</a>
+                  <a href="#Home">Home</a>
                   </li>
                   <li>
-                    <a href="/about">About</a>
+                    <a href="#Experience">Experience</a>
                   </li>
                   <li>
-                    <a href="/contact">Contact</a>
+                    <a href="#Contact">Contact</a>
                   </li>
                 </ul>
               </div>

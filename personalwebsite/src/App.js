@@ -20,7 +20,7 @@ function App() {
             <Skills />
             <Timeline />
             <Carousel />
-            <Footer />
+            <Footer theme={theme} />
         </div>
   );
 }

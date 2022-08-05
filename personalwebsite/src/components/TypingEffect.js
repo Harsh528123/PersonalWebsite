@@ -12,6 +12,7 @@ const TypingEffect = () => {
         eraseSpeed={200}
         typingDelay={1000}
         speed={200}
+        id="Home"
       />
     </header>
   )
