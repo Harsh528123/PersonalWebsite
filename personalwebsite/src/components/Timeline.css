@@ -173,7 +173,14 @@
     opacity: 100%;
     font-size: smaller ;
 }
-
+.timelineanimation{
+    width:100%;
+}
+.special{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+}
 
 
 /*

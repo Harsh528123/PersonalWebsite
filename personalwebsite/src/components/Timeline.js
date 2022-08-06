@@ -11,7 +11,7 @@ const Timeline = () => {
             <h1 className='timeline-title' id="Experience"> Tech-Related Work Experience </h1>
                 <div className="timeline-container">
                     {data.map((data, id) => (
-                        <TimelineItem data={data} key={id}/>
+                        <TimelineItem data={data} key={id} id={id}/>
                     ))}
                 </div>
         </div>

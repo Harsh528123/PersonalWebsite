@@ -7,6 +7,9 @@ import Skills from './components/Skills'
 import {React, useState} from 'react'
 import Carousel from './components/Carousel';
 import Footer from './components/Footer';
+import ScrollAnimation from 'react-animate-on-scroll';
+import './animate.css'
+
 
 function App() {
 
