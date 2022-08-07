@@ -36,7 +36,7 @@
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     background-color: var(--skillbutton);
-    color: var(--text-primary);
+    color: var(--text-secondary);
     box-shadow: 1px 1px var(--text-primary);
 }
 .OverallSkills button:hover{

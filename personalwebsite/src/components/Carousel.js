@@ -2,6 +2,7 @@ import {React, useState} from 'react'
 import './Carousel.css'
 import dataSlider from './carouselData'
 import ButtonSlider from './ButtonSlider'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Carousel = () => {
     const [slideIndex, setSlideIndex] = useState(1)
@@ -25,39 +26,41 @@ const Carousel = () => {
     }
 
   return (
-    <section className='Carousel'>
-        <h1> Projects </h1>
-        <div className="container-slider">
-                {dataSlider.map((obj, index)=>{
-                    return (
-                        <div
-                            key={obj.id}
-                            className={slideIndex=== index + 1 ? "slide active-anim": "slide"}
-                        >
-                                {/* put absolute positioning and etc... */}
-                            
-                                <p className='title'> {obj.title} </p>
-                                <div className='content'>
-                                    <div className='content button'>
-                                        <ButtonSlider moveSlide={prevSlide} direction={"prev"}/>
+        <section className='Carousel'>
+              <ScrollAnimation animateIn='fadeIn' duration={3} animateOnce={true}>
+            <h1> Projects </h1>
+            <div className="container-slider">
+                    {dataSlider.map((obj, index)=>{
+                        return (
+                            <div
+                                key={obj.id}
+                                className={slideIndex=== index + 1 ? "slide active-anim": "slide"}
+                            >
+                                    {/* put absolute positioning and etc... */}
+                                
+                                    <p className='title'> {obj.title} </p>
+                                    <div className='content'>
+                                        <div className='content button'>
+                                            <ButtonSlider moveSlide={prevSlide} direction={"prev"}/>
+                                        </div>
+                                        <p className='description'> {obj.description}</p>
+                                        <ButtonSlider moveSlide={nextSlide} direction={"next"}/>
                                     </div>
-                                    <p className='description'> {obj.description}</p>
-                                    <ButtonSlider moveSlide={nextSlide} direction={"next"}/>
-                                </div>
 
-                        </div>
-                    )
-                })}
-                <div className="container-dots">
-                    {Array.from({length: 4}).map((item,index)=> (
-                        <div 
-                            className={slideIndex===index+1 ? "dot active" : "dot"}
-                            onClick={()=> moveDot( index + 1 )}
-                        ></div>
-                        ))}
-                </div>
-        </div>
-    </section>
+                            </div>
+                        )
+                    })}
+                    <div className="container-dots">
+                        {Array.from({length: 4}).map((item,index)=> (
+                            <div 
+                                className={slideIndex===index+1 ? "dot active" : "dot"}
+                                onClick={()=> moveDot( index + 1 )}
+                            ></div>
+                            ))}
+                    </div>
+            </div>
+            </ScrollAnimation>
+        </section>
   )
 }
 

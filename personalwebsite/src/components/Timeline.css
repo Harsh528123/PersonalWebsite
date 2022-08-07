@@ -143,7 +143,6 @@
     margin-left:10%;
     margin-top:0px;
     margin-right:0px;
-    background-color: var(--timeline);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -154,7 +153,7 @@
     cursor: pointer;
 }
 .timeline-item-content button {
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 .timeline-item-content .language{
     display:flex;
@@ -207,6 +206,14 @@
 @media only screen and (max-width: 767px) {
     .timeline-item-content .language button{
         display:none;
+    }
+    .timelineanimation{
+        width:80%;
+    }
+    .special{
+        width:80%;
+        display:flex;
+        justify-content: flex-end;
     }
     .timeline-item-content {
         width: 100%;
