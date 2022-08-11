@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Harsh528123.github.io/PersonalWebsite/static/css/main.c0ca3240.css",
-    "main.js": "/Harsh528123.github.io/PersonalWebsite/static/js/main.ffb31e0d.js",
-    "static/media/Intro.jpg": "/Harsh528123.github.io/PersonalWebsite/static/media/Intro.633eb7ca4cc3799fbd3f.jpg",
-    "index.html": "/Harsh528123.github.io/PersonalWebsite/index.html",
-    "main.c0ca3240.css.map": "/Harsh528123.github.io/PersonalWebsite/static/css/main.c0ca3240.css.map",
-    "main.ffb31e0d.js.map": "/Harsh528123.github.io/PersonalWebsite/static/js/main.ffb31e0d.js.map"
+    "main.css": "/PersonalWebsite/static/css/main.c0ca3240.css",
+    "main.js": "/PersonalWebsite/static/js/main.c4ff751f.js",
+    "static/media/Intro.jpg": "/PersonalWebsite/static/media/Intro.633eb7ca4cc3799fbd3f.jpg",
+    "index.html": "/PersonalWebsite/index.html",
+    "main.c0ca3240.css.map": "/PersonalWebsite/static/css/main.c0ca3240.css.map",
+    "main.c4ff751f.js.map": "/PersonalWebsite/static/js/main.c4ff751f.js.map"
   },
   "entrypoints": [
     "static/css/main.c0ca3240.css",
-    "static/js/main.ffb31e0d.js"
+    "static/js/main.c4ff751f.js"
   ]
 }
