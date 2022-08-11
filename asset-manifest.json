@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Harsh528123.github.io/PersonalWebsite/static/css/main.c0ca3240.css",
+    "main.js": "/Harsh528123.github.io/PersonalWebsite/static/js/main.ffb31e0d.js",
+    "static/media/Intro.jpg": "/Harsh528123.github.io/PersonalWebsite/static/media/Intro.633eb7ca4cc3799fbd3f.jpg",
+    "index.html": "/Harsh528123.github.io/PersonalWebsite/index.html",
+    "main.c0ca3240.css.map": "/Harsh528123.github.io/PersonalWebsite/static/css/main.c0ca3240.css.map",
+    "main.ffb31e0d.js.map": "/Harsh528123.github.io/PersonalWebsite/static/js/main.ffb31e0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0ca3240.css",
+    "static/js/main.ffb31e0d.js"
+  ]
+}
