@@ -10,7 +10,7 @@ const dataSlider = [
     For all the colors for dark mode and light mode, I used CSS variables to make life easier. Most of my layout modelling was done in flexbox. "
   },
   {
-    id: 1,
+    id: 2,
     title: "Graph Modelled Courses",
     description: 'I developed a graph class consisting of an adjacency list and numerous methods using object-oriented design and \n\
     graph algorithms such as BFS and topological sorting. I implemented a C++ program that allows users to create prerequisite \n\

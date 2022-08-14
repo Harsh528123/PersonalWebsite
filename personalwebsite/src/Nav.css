@@ -62,7 +62,7 @@ button {
     #hidden {
         position:absolute;
         left:0px;
-        top:50px;
+        top:0px;
         background-color: var(--hidden);
         height:100%;
         width:100%;
@@ -87,4 +87,8 @@ button {
     .brand-name{
         font-size: 22px;
     }
+}
+
+.Menu svg {
+    fill: aqua;
 }

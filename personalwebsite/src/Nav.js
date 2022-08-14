@@ -1,9 +1,10 @@
 import {React,useState, useEffect} from 'react'
 import './Nav.css'
-import {FaBars} from 'react-icons/fa'
+import { AiOutlineMenu } from 'react-icons/ai'
+import {TiDelete} from 'react-icons/ti'
 import DarkModeToggle from "react-dark-mode-toggle"
 
-const Nav = ( {theme, setTheme} ) => {
+const Nav = ( {theme, setTheme, sethiddenMenu,hiddenMenu} ) => {
       const [showLinks, setShowLinks]= useState(false);
       const [isDarkMode, setIsDarkMode] = useState(false);
       const handleTheme = () => {
@@ -25,25 +26,40 @@ const Nav = ( {theme, setTheme} ) => {
       setIsDarkMode(true);
     }
   },[] )
-  return (
 
+  const handleHiddenLinks = () => {
+    setShowLinks(!showLinks);
+    sethiddenMenu(false);
+  }
+  return (
     <header>
          <nav className="navigation" >
               <a href="/" className="brand-name"> Harsh Kothari </a> 
               <DarkModeToggle className='ToggleButton' onChange={handleTheme} checked={isDarkMode} size={60} /> 
-              <button onClick={ ()=> setShowLinks(!showLinks)}> <FaBars/> </button>
+              <button onClick={ ()=> 
+                {
+                  setShowLinks(!showLinks)
+                  sethiddenMenu(!hiddenMenu)
+                }}> <AiOutlineMenu/> </button>
               <div className="navigation-menu" id={ showLinks ? "hidden" : ""}>
                 <ul>
                   <li>
-                  <a href="#Home">Home</a>
+                  <a onClick={handleHiddenLinks} href="#Home">Home</a>
                   </li>
                   <li>
-                    <a href="#Experience">Experience</a>
+                    <a onClick={handleHiddenLinks} href="#Experience">Experience</a>
                   </li>
                   <li>
-                    <a href="#Contact">Contact</a>
+                    <a onClick={handleHiddenLinks} href="#Contact">Contact</a>
                   </li>
                 </ul>
+                <button style={{border:'none', justifySelf:'flex-end', height:'10%', width:'10%', marginRight:'0' }}
+                onClick={ ()=> 
+                  {
+                    setShowLinks(false);
+                    sethiddenMenu(false);
+                  }}
+                > <TiDelete size={"40"}/> </button>
               </div>
     </nav>
     </header>

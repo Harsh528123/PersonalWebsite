@@ -4,7 +4,7 @@ import rightArrow from './images/right-arrow.jpg'
 import './Carousel.css'
 
 const ButtonSlider = ({direction,moveSlide}) => {
-    console.log(direction, moveSlide);
+   // console.log(direction, moveSlide);
   return (
     <button 
             onClick={moveSlide}

@@ -14,16 +14,21 @@ import './animate.css'
 function App() {
 
   const [theme, setTheme] = useState(localStorage.getItem("theme") || 'dark' );
+  const [hiddenMenu, sethiddenMenu] = useState(false);
   return (
         <div className="App" data-theme={theme} >
         {/* <Nav handler={handleUpdate} /> */}    
-            <Nav theme={theme} setTheme={setTheme} />
-            <TypingEffect />
-            <Smallintro theme={theme} />
-            <Skills />
-            <Timeline />
-            <Carousel />
-            <Footer theme={theme} />
+            <Nav theme={theme} setTheme={setTheme} sethiddenMenu={sethiddenMenu} hiddenMenu={hiddenMenu}/>
+            {!hiddenMenu? 
+            <>
+                <TypingEffect />
+                <Smallintro theme={theme} />
+                <Skills />
+                <Timeline />
+                <Carousel />
+                <Footer theme={theme} />
+            </> : null
+            }
         </div>
   );
 }
