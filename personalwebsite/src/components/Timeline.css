@@ -181,6 +181,9 @@
     justify-content: flex-end;
     
 }
+.language button {
+    cursor: auto;
+}
 
 
 /*

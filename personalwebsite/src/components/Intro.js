@@ -12,7 +12,7 @@ const SmallIntro = ({theme}) => {
               <article className='AboutMe' id="AboutMeMobile">
                 <h1> Brief Introduction </h1>
                       <p> I am studying Software Engineering at the University of Alberta and am in the graduating class of 2025.
-                          I am interested in exploring back-end and full-stack opportunities! I am currently a NSERC Research Assistant at Athabasca University (but more on that down below!).
+                          I am interested in exploring back-end and full-stack opportunities! I am currently a Software Engineering intern at Fitzba Technologies Inc. (part-time for 4 months, ending in December).
                           My availability for my next co-op is 8 months starting from January 2023. Please feel free to contact me through my email listed below :)
                       </p>
                   {theme==='light' ?

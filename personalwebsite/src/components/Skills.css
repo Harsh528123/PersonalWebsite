@@ -39,9 +39,7 @@
     color: var(--text-secondary);
     box-shadow: 1px 1px var(--text-primary);
 }
-.OverallSkills button:hover{
-    cursor: pointer;
-}
+
 
 .noshow {
     visibility: hidden;

@@ -38,8 +38,8 @@ const Skills = () => {
                 </div>
                 <div className='setof4'>
                     <button> PostgreSQL </button>
-                    <button className="noshow"></button>
-                    <button className="noshow"></button>
+                    <button> MongoDB</button>
+                    <button> Jira </button>
                     <button className="noshow"></button>
                 </div>
             </div>
