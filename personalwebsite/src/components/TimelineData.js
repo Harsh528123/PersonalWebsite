@@ -59,7 +59,7 @@ const timelineData = [
         technical and non technical responsibilities.',
         date: 'Sept-Dec 2022',
         category: {
-        tag: 'Software Engineer Intern @ Fitzba Technologies Inc. (Part-time)',
+        tag: 'Software Engineer Intern @ Fitzba Technologies Inc (Part-time)',
         color: '#943c245e'
         }
     }
