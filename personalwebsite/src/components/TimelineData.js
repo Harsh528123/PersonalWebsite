@@ -51,18 +51,34 @@ const timelineData = [
     
     {
       id:4,
-        languages:["React.js","Node.js", "Express.js" ,"MongoDB", "Jira"],
+        languages:["Node.js", "Express.js" ,"MongoDB", "Jira"],
         text: 'I currently am working on setting up Jira for the team since it is a startup and a new development team.\n\
         Since it is a startup, I also am working on the requirements engineering side of things such as making a vision document. \n\
         I also am making Figma designs for the UI/UX of the page. Later on, (in November) I will be working with the MERN stack \n\
         (Mongo, Express, React, Node). Overall I believe this part-time job will let me learn more valuable skills that includes both \n\
         technical and non technical responsibilities.',
-        date: 'Sept-Dec 2022',
+        date: 'Sep 2022 - Present',
         category: {
         tag: 'Software Engineer Intern @ Fitzba Technologies Inc (Part-time)',
         color: '#943c245e'
         }
-    }
+    },
+
+    {
+        id:5,
+          languages:["React.js","Django", "Azure" ,"Python"],
+          text: 'I currently am restructing and optimizing an existing web application that consists of a search tool used internally \n\
+          by OPG employees to find documents of various types from different stations. Right now the search tool uses ML models in \n\
+          the backend so that based on the user\'s search, it can find the best matches from thousands of documents. I am mainly \n\
+          responsible for updating the frontend by switching it to a React frontend as well as optimizing any middleware and routes. \n\
+          I also have gained exposure in Azure services. I use Azure DevOps for version control, task tracking and pipelining and I use \n\
+          Microsoft Azure for containerization and deployment.',
+          date: 'Jan-August 2023',
+          category: {
+          tag: 'Software Engineer Intern @ Ontario Power Generation (OPG)',
+          color: '#943c245e'
+          }
+      }
     // OBJECT 3
   ]
 
