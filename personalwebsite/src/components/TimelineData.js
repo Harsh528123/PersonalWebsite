@@ -75,7 +75,7 @@ const timelineData = [
           page where a user can delete a certain search result and the change shows in the charts. In backend tasks I have worked on many middleware functions \n\
           as well as functions that transform the data into displayable data \n\
           I use Azure DevOps for version control, task tracking and pipelining and I use \n\
-          Microsoft Azure for containerization and deployment. ',
+          Microsoft Azure for containerization and deployment.',
           date: 'Jan-August 2023',
           category: {
           tag: 'Software Engineer Intern @ Ontario Power Generation (OPG)',
