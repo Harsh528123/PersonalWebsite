@@ -67,12 +67,15 @@ const timelineData = [
     {
         id:5,
           languages:["React.js","Django", "Azure" ,"Python"],
-          text: 'I currently am restructing and optimizing an existing web application that consists of a search tool used internally \n\
+          text: 'I currently am assisting in the development of an existing web application that consists of a search tool used internally \n\
           by OPG employees to find documents of various types from different stations. Right now the search tool uses ML models in \n\
-          the backend so that based on the user\'s search, it can find the best matches from thousands of documents. I am mainly \n\
-          responsible for updating the frontend by switching it to a React frontend as well as optimizing any middleware and routes. \n\
-          I also have gained exposure in Azure services. I use Azure DevOps for version control, task tracking and pipelining and I use \n\
-          Microsoft Azure for containerization and deployment.',
+          the backend so that based on the user\'s search, it can find the best matches from thousands of documents.\n\
+          I have built a dynamic dashboard in the web application using Chart.js with drill in capabilities and have gained experience in \n\
+          using Pandas dataframes in the backend to retrieve the appropriate data for the charts. I have also built a editable search results \n\
+          page where a user can delete a certain search result and the change shows in the charts. In backend tasks I have worked on many middleware functions \n\
+          as well as functions that transform the data into displayable data \n\
+          I use Azure DevOps for version control, task tracking and pipelining and I use \n\
+          Microsoft Azure for containerization and deployment. ',
           date: 'Jan-August 2023',
           category: {
           tag: 'Software Engineer Intern @ Ontario Power Generation (OPG)',
