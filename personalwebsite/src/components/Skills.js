@@ -8,6 +8,7 @@ const Skills = () => {
              <button> Python </button>
              <button> C++ </button>
              <button> Linux </button>
+             <button> Java </button>
              <button className="noshow"> No Show </button>
         </section>
         <section className='SpecificSkills'> 
@@ -39,7 +40,7 @@ const Skills = () => {
                 <div className='setof4'>
                     <button> PostgreSQL </button>
                     <button> MongoDB</button>
-                    <button> Jira </button>
+                    <button> Django </button>
                     <button className="noshow"></button>
                 </div>
             </div>
