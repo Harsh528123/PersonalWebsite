@@ -11,8 +11,9 @@ const SmallIntro = ({theme}) => {
               <img src={Profile} alt="Profile" className='Profile'/>
               <article className='AboutMe' id="AboutMeMobile">
                 <h1> Brief Introduction </h1>
-                      <p> I am studying Software Engineering at the University of Alberta and am in the graduating class of 2025.
-                          I am interested in exploring back-end and full-stack opportunities! I have previously done two co-ops - one as a SWE intern at Ontario Power Generation (OPG)
+                      <p> I am studying Software Engineering at the University of Alberta and am in the graduating class of May 2025.
+                          I am interested in exploring back-end and full-stack opportunities! Currently I am doing a co-op at NOV (formerly National Oilwell Varco)
+                          I have previously done two co-ops - one as a SWE intern at Ontario Power Generation (OPG)
                           and one as a NSERC Research Assistant with Athabasca University.
                       </p>
                   {theme==='light' ?
