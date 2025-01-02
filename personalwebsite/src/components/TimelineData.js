@@ -83,13 +83,15 @@ const timelineData = [
   {
     id:6,
       languages:["Angular","Typescript", "C#"],
-      text: 'I developed a diagnostic web application using Angular and TypeScript to troubleshoot REST API endpoints \n\
+      text: 'I improved software maintainability by implementing the migration of authentication services from a Go-based \n\
+      microservice to a .NET Core microservice in C#, aligning with the team’s primary technology stack. I developed a \n\
+      diagnostic web application using Angular and TypeScript to troubleshoot REST API endpoints \n\
       and SSE connections for oil rig monitoring software. This application significantly reduced customer complaints \n\
       about the software. I ensured the timely delivery of bug fixes and new features by addressing numerous bug and  \n\
       feature tickets through efficient software development practices, including collaborative sprint planning and backlog \n\
       grooming. Additionally, I gained expertise in state management and asynchronous processes by implementing NgRx, RxJS, \n\
       and applying the Singleton and Factory design patterns, which enhanced code reusability and maintainability.',
-      date: 'May 2024 - Present',
+      date: 'May 2024 - December 2024',
       category: {
       tag: 'Software Engineer Intern @ NOV (formerly National Oilwell Varco)',
       color: '#943c245e'
