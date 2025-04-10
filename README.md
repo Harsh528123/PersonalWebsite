@@ -1,2 +1,2 @@
 # PersonalWebsite
-This is my personal website and I created it using React + CSS styling and formatting. Here is a link to my website: https://harshkothari.ca/ . Currently making it more mobile friendly. 
+This is my personal website and I created it using React. Here is a link to my website: https://harshkothari.ca/.
